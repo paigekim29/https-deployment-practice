@@ -40,7 +40,7 @@ class Signup extends React.Component {
     }
 
     axios
-      .post("https://107.23.136.84:4000/signup", {
+      .post("https://3.89.24.7:5000/signup", {
         email: email,
         password: password,
         username: username,
@@ -64,28 +64,28 @@ class Signup extends React.Component {
               <input
                 type="email"
                 onChange={this.handleInputValue("email")}
-              ></input>
+              />
             </div>
             <div>
               <span>비밀번호</span>
               <input
                 type="password"
                 onChange={this.handleInputValue("password")}
-              ></input>
+              />
             </div>
             <div>
               <span>이름</span>
               <input
                 type='text'
                 onChange={this.handleInputValue("username")}
-              ></input>
+              />
             </div>
             <div>
               <span>전화번호</span>
               <input
                 type='tel'
                 onChange={this.handleInputValue("mobile")}
-              ></input>
+              />
             </div>
             <div>
               <Link to='/login'>이미 아이디가 있으신가요?</Link>

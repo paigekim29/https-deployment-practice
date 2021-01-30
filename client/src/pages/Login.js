@@ -38,7 +38,7 @@ class Login extends React.Component {
     }
 
     return axios
-      .post("https://107.23.136.84:4000/signin", {
+      .post("https://3.89.24.7:5000/signin", {
         email: email,
         password: password,
       })
@@ -56,11 +56,11 @@ class Login extends React.Component {
           <form onSubmit={(e) => e.preventDefault()}>
             <div>
               <span>이메일</span>
-              <input type='email' onChange={this.handleInputValue("email")}></input>
+              <input type='email' onChange={this.handleInputValue("email")}/>
             </div>
             <div>
               <span>비밀번호</span>
-              <input type='password' onChange={this.handleInputValue("password")}></input>
+              <input type='password' onChange={this.handleInputValue("password")}/>
             </div>
             <div>
               <Link to='/signup'>아직 아이디가 없으신가요?</Link>

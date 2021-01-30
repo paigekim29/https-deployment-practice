@@ -18,7 +18,7 @@ class App extends React.Component {
   }
 
   isAuthenticated() {
-    return axios.get("https://107.23.136.84:4000/user")
+    return axios.get("https://3.89.24.7:5000/user")
       .then((res) => {
         console.log(res.data);
         this.setState({ userinfo: res.data, isLogin: true });
@@ -37,7 +37,7 @@ class App extends React.Component {
   }
 
   handleLogout() {
-    axios.post("https://107.23.136.84:4000/signout")
+    axios.post("https://3.89.24.7:5000/signout")
       .then((res) => {
         this.setState({ userinfo: null, isLogin: false });
         this.props.history.push('/');
